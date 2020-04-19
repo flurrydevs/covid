@@ -1,0 +1,234 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	height: 100vh;
+	background-color: #e5e5e5;
+	color: #36425a;
+	font-family:'Roboto', sans-serif;
+	font-size: 14px;
+}
+
+.neo-container {
+	margin: 30px 10px;
+	background-color: #e5e5e5;
+}
+
+@media (min-width: 768px) {
+	.neo-container {
+		margin: 30px 60px;
+	}
+}
+
+/* navigation */
+
+.neomorphism-top {
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	margin: 20px 0px;
+	min-height: 70px;
+	border-radius: 43px;
+	background: #e5e5e5;
+	box-shadow:  10px -10px 20px #cacaca, 
+             -10px 10px 20px #ffffff;
+}
+
+@media (min-width: 768px) {
+	.neomorphism-top {
+			margin: 20px 0px 20px 0;
+	}
+}
+
+.neomorphism-top .neomorphism-top-menu ul li {
+	display: inline-block;
+	margin:0 5px;
+	padding: 7px 22px;
+	border-radius: 50px;
+background: linear-gradient(145deg, #cecece, #f5f5f5);
+box-shadow:  12px 12px 49px #a0a0a0, 
+             -12px -12px 49px #ffffff;
+}
+
+
+.coronavirus-container {
+	display: flex;
+	width: 100%;
+}
+
+@media (max-width: 767px) {
+	.coronavirus-container {
+		flex-direction: column-reverse;
+	}
+}
+
+
+.neomorphism-sidebar {
+	display: flex;
+	flex-direction: column;
+	width: 20%;
+	margin-left: 2%;
+}
+
+@media (max-width: 767px) {
+	.neomorphism-sidebar {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 100%;
+		margin-left: 0;
+	}
+}
+
+.neomorphism-list-title {
+	color: #36425a;
+	padding: 0 15px;
+	width: 100%;
+}
+
+.neomorphism-list-title h1 {
+		font-size: 18px;
+}
+
+@media (min-width: 768px) {
+	.neomorphism-list-title {
+		width: 100%;
+	}
+	
+	.neomorphism-list-title h1 {
+		font-size: 24px;
+		width: 100%;
+	}
+}
+
+.neomorphism-item p {
+	margin: 10px;
+}
+
+.coronavirus-count {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding: 20px;
+	margin-bottom: 15px;
+	margin-top: 8px;
+	border-radius: 15px;
+	background: #e5e5e5;
+	box-shadow:  22px 22px 46px #999999, 
+             -22px -22px 46px #ffffff;
+}
+
+.coronavirus-count-numb {
+	font-size: 32px;
+	text-align: center;
+	font-weight: bold;
+	color: #373434;
+}
+
+
+.infected {
+	color: orange;
+}
+
+.death {
+	color: rgb(230, 0, 0);
+}
+
+.recovered {
+	color: green;
+}
+
+.coronavirus-count-title h2{
+	font-size: 20px;
+	margin: 5px;
+	text-align: center;
+	color: #41506d;
+}
+
+@media (max-width: 767px) {
+	
+	.coronavirus-count {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: 28%;
+	padding: 18px 8px;
+	margin: 8px;
+	}
+
+	.coronavirus-count-numb {
+	font-size: 22px;
+	}
+
+	.coronavirus-count-title h2{
+	font-size: 14px;
+	}
+}
+
+.neomorphism-list {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin-bottom: 15px;
+	width: 78%;
+}
+
+@media (max-width: 767px) {
+	.neomorphism-list {
+		flex-direction: row;
+		width: 100%;
+	}
+}
+
+.neomorphism-item {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	width: 45%;
+	height: 165px;
+	margin: 8px;
+	padding: 4px;
+	border-radius: 15px;
+	background: #e5e5e5;
+	box-shadow:  22px 22px 46px #999999, 
+             -22px -22px 46px #ffffff;
+}
+
+@media (min-width: 768px) {
+	.neomorphism-item {
+		width: 23%;
+		height: 160px;
+		padding: 25px 20px;
+	}
+}
+
+.neomorphism-item-title {
+	margin-top: 5px;
+	font-size: 14px;
+	font-weight: 600;
+	text-align: center;
+}
+
+.neomorphism-item__content {
+	color: #333;
+	font-size:14px;
+}
+
+.neomorphism-item.--dot {
+	padding: 25px 43px;
+	font-size: 20px;
+	font-weight: 600;
+	color: #e53d31;
+	width: 40px;
+	height: 15px;
+	border-radius: 50px;
+	background: linear-gradient(145deg, #cecece, #f5f5f5);
+	box-shadow:  22px 22px 46px #999999, 
+             -22px -22px 46px #ffffff;
+}
